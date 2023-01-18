@@ -1,0 +1,31 @@
+.container{
+    box-sizing: border-box;
+    background-color: black;
+    width: 1000px;
+    height: 1000px;
+}
+.box1{
+    height: 500px;
+    width: 500px;
+    background-color: yellow;
+    padding: 40px;
+    border: solid 2px black;
+    position: absolute;
+    margin: 25%; 
+}
+.box2{
+    height: 300px;
+    width: 300px;
+    background-color: green;
+    position: absolute;
+    top: 9px;
+    padding: 75px;
+}
+.box3{
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+    position: absolute;
+    top: 9px;
+    border: solid 20px black;
+}

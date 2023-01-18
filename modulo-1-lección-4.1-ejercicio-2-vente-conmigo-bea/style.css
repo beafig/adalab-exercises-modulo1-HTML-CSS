@@ -1,0 +1,16 @@
+:root{
+    margin:0;
+    padding: 0;
+}
+.encabezado{
+    background-color: purple;
+    position: fixed;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.texto{
+    position:absolute;
+    top: 100px;
+    z-index: 999;
+}
