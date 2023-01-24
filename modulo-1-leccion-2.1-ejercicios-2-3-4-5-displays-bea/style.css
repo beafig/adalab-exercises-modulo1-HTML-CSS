@@ -1,0 +1,43 @@
+div {
+   height: 100px;
+   width: 100px;
+   /* border: 50px black; */
+}
+/* ocupa todo el ancho de página */
+.ej1 {
+    display: block;
+    background-color: red;
+}
+/* el ej2 no modifica su tamaño ya que es un elemento inline y ocupa lo que ocupe su contenido */
+.ej2 {
+    display: inline;
+    background-color: green;
+}
+/* se puede modificar su tamaño, por lo tanto se comporta como un elemento block, pero se posiciona al lado del elemento anterior y hay espacio, por lo que se comporta como un elemento inline */
+.ej3 {
+    display: inline-block;
+    background-color: blue;
+    /* width: 500px;
+    height: 500px;
+    border: 5px black ;
+    padding: justify ;
+    margin: 50px;  */
+}
+/* la foto se incluye dentro del parrafo  como si fuera un elemento más de este, se comporta como un elemento inline*/
+/* la foto que va entre parrafos se comporta como un elemento block, ya que el contenido del siguiente elemento, en este caso parrafo comienza justo debajo de la imagen, y no al lado */
+.photo{
+    width: 100px;
+}
+/* al cambiar el formato de caja y poner border box la imagen se sale del div ya que este mantiene su padding y su borden pero dentro de los 100x100px que le dimos de tamaño, por lo tanto la foto no entra */
+.div2{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: solid 5px black;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.cuadro{
+    width: 100px;
+    height: 100px;
+}

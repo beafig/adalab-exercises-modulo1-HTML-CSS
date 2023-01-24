@@ -1,0 +1,28 @@
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: black;
+  display: grid;
+  grid-template-rows: 20vh 60vh 20vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.header {
+  background-color: pink;
+  grid-column: 1/13;
+}
+.menu {
+  background-color: blue;
+  grid-column: 1/5;
+}
+.content {
+  background-color: blueviolet;
+  grid-column: 5/13;
+}
+.footer {
+  background-color: aqua;
+  grid-column: 1/13;
+}

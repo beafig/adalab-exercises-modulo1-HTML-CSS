@@ -1,0 +1,74 @@
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  /* mi hoja de reset no tiene box-sizing, ¿hay alguna mejor? */
+  box-sizing: border-box;
+}
+.main {
+  /* el ejercicio dice que el landing de 100vh, ¿solo el main o incluido el footer? */
+  height: 100vh;
+  width: 100vw;
+  /* sería correcto poner las propiedades del texto aquí o mejor en .h1 */
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.h1 {
+  color: #cc212a;
+  font-weight: bold;
+  font-size: 4rem;
+  text-align: center;
+}
+.h1::first-line {
+  word-spacing: 100vw;
+}
+hr {
+  background-color: #cc212a;
+  height: 2px;
+  margin: 0;
+}
+.footer {
+  text-align: center;
+  position: sticky;
+  bottom: 0px;
+  height: 15vh;
+}
+.r {
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  background-color: #cc212a;
+  color: white;
+  /* sería mejor usar transform: translate? */
+  position: relative;
+  top: -35px;
+  left: 44%;
+}
+.p {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 620px) {
+  /* ¿de donde sale el margen de la r? */
+  .r {
+    height: 30px;
+    width: 30px;
+    font-size: 1rem;
+    position: relative;
+    top: 40%;
+    left: 95%;
+  }
+  .div {
+    margin-top: 15px;
+    display: flex;
+  }
+  .p {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}

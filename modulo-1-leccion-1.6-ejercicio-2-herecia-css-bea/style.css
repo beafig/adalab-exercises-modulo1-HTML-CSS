@@ -1,10 +1,15 @@
-.link {
+.links {
     color: red;
 }
-article {
+body {
     font-size: 18px;
     font-family: tahoma;
     color: rebeccapurple;
     background-color: mediumpurple;
     line-height: 1.5;
+}
+/* conseguir que los links se pongan en rojo */
+a{
+    color: red;
+    text-decoration: none;
 }

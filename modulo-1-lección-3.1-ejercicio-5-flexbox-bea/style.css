@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: blue;
+    min-height: 10vh;
+}
+/* no usé las propiedades flex, pero esque no entiendo para que es necesario en esta propuesta de ejercicio */
+.main{
+    background-color: red;
+    min-height: 80vh;
+}
+.footer{
+    background-color: green;
+}
