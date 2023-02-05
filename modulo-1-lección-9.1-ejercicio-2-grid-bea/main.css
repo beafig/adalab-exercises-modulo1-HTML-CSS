@@ -1,3 +1,4 @@
+/* COnseguir que quede como la foto del ejemplo, y que header y footer ocupen el 20% de la pantalla cada uno */
 * {
   border: 0;
   padding: 0;
@@ -5,10 +6,16 @@
 }
 
 .main {
-  background-color: black;
+  /* en lugar de darle a la segunda fila 60vh podríamos poner un min-height: 100 vh; */
   display: grid;
   grid-template-rows: 20vh 60vh 20vh;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(12, 1fr);
+}
+/* la siguiente significa: aplicar a todas las hijas directas de main */
+.main > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header {
   background-color: pink;
